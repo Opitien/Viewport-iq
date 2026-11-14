@@ -56,7 +56,7 @@
     "pixelmatch": "^7.1.0",
     "playwright": "^1.50.1",
     "pngjs": "^7.0.0",
-    "zod": "^3.24.2"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^22.13.4",
