@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overlapping Elements Defect</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      padding: 1rem;
+    }
+    .hero-banner {
+      position: relative;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 3rem 1.5rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .hero-banner h1 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+    .cta-button {
+      padding: 0.75rem 1.5rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    /* Defect: Poorly positioned absolute badge overlapping the CTA button directly */
+    .floating-badge {
+      position: absolute;
+      top: 220px;
+      left: 30px;
+      width: 180px;
+      height: 50px;
+      background: #dc2626;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-banner">
+    <h1>Special Product Announcement</h1>
+    <p>Sign up now to get early access to our new platform.</p>
+    <button class="cta-button" type="button">Sign Up Instantly</button>
+    <div class="floating-badge">SALE: 50% OFF!</div>
+  </div>
+</body>
+</html>

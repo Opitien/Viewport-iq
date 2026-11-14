@@ -1,0 +1,16 @@
+node_modules/
+src/
+tests/
+fixtures/
+scripts/
+output/
+.npmrc
+.gitignore
+vitest.config.ts
+tsconfig.json
+*.log
+.DS_Store
+Thumbs.db
+.env
+.env.local
+.npmignore.json

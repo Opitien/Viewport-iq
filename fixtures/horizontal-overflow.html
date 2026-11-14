@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Overflow Defect</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f1f5f9;
+    }
+    /* Fixed 1200px container with no max-width: 100% causing horizontal overflow on mobile screens */
+    .rigid-container {
+      width: 1200px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border: 2px solid #ef4444;
+    }
+    .rigid-row {
+      display: flex;
+      gap: 20px;
+      width: 1100px;
+    }
+    .rigid-box {
+      width: 350px;
+      background: #fee2e2;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="rigid-container">
+    <h1>Fixed 1200px Container Defect</h1>
+    <p>This container has a hard-coded width of 1200px without max-width: 100%, causing severe horizontal page overflow on small screens.</p>
+    <div class="rigid-row">
+      <div class="rigid-box">Box A (350px)</div>
+      <div class="rigid-box">Box B (350px)</div>
+      <div class="rigid-box">Box C (350px)</div>
+    </div>
+  </div>
+</body>
+</html>

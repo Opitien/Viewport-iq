@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Clipping Layout Defect</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f8fafc;
+    }
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    /* Defect: Fixed height with overflow: hidden clipping substantial text */
+    .clipped-card {
+      width: 300px;
+      height: 90px;
+      overflow: hidden;
+      background: white;
+      padding: 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+    }
+    .clipped-card p {
+      margin: 0;
+      color: #334155;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h1>Review Cards with Severe Text Clipping</h1>
+  <div class="cards">
+    <div class="clipped-card">
+      <h3>Customer Testimonial</h3>
+      <p>
+        The product seemed promising initially, but we encountered critical layout bugs when deploying to production.
+        Multiple paragraphs of detailed customer feedback are completely cut off because the container has a hard-coded
+        height of 90px combined with overflow hidden, making this text unreadable by users on all viewports!
+      </p>
+    </div>
+  </div>
+</body>
+</html>

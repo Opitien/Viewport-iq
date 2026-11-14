@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Broken Mobile Navigation Defect</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header {
+      background: #1e1e2f;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    .brand {
+      font-weight: bold;
+      margin-right: 2rem;
+    }
+    /* Defect: unyielding desktop navigation with hardcoded 850px width and no-wrap */
+    nav {
+      display: flex;
+      width: 850px;
+      gap: 1.5rem;
+      white-space: nowrap;
+    }
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">EnterprisePortal</div>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Analytics</a>
+      <a href="#">Customer Insights</a>
+      <a href="#">Integrations</a>
+      <a href="#">Billing & Subscription</a>
+      <a href="#">Audit Logs</a>
+      <a href="#">System Settings</a>
+    </nav>
+  </header>
+  <main style="padding: 2rem;">
+    <h1>Enterprise Portal</h1>
+    <p>On mobile viewports, the horizontal navbar spans 850px, completely overflowing the screen without a hamburger toggle.</p>
+  </main>
+</body>
+</html>

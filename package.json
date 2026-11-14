@@ -1,0 +1,69 @@
+{
+  "name": "viewport-iq",
+  "version": "1.0.0",
+  "description": "ViewportIQ: Production-grade Browser Inspection & Responsive Testing MCP Server. Inspect websites, test responsive layouts, detect overflow, capture screenshots, and audit layouts — all through AI assistants via MCP.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "viewport-iq": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "demo": "tsx scripts/demo.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "node -e \"const fs = require('fs'); fs.rmSync('dist', { recursive: true, force: true });\""
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "playwright",
+    "responsive-design",
+    "browser-inspection",
+    "frontend-tooling",
+    "devtools",
+    "visual-regression",
+    "overflow-detection",
+    "layout-audit",
+    "screenshot",
+    "viewport-testing",
+    "claude",
+    "ai-tools"
+  ],
+  "author": "Opitien Ejiroghene <opitiene@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opitien/viewport-iq.git"
+  },
+  "homepage": "https://github.com/opitien/viewport-iq#readme",
+  "bugs": {
+    "url": "https://github.com/opitien/viewport-iq/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "pixelmatch": "^7.1.0",
+    "playwright": "^1.50.1",
+    "pngjs": "^7.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

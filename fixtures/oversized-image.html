@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oversized Image Layout Defect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 1rem;
+      font-family: sans-serif;
+    }
+    .post-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fafafa;
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+    }
+    /* Defect: unconstrained image width exceeding parent container and mobile viewport */
+    .unconstrained-image {
+      width: 1400px;
+      height: 400px;
+      display: block;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      color: white;
+      text-align: center;
+      line-height: 400px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <article class="post-container">
+    <h1>Article with Oversized Image</h1>
+    <p>The container is 600px, but the image inside has an unconstrained width of 1400px with no max-width, overflowing the layout.</p>
+    <div class="unconstrained-image">Oversized 1400px Visual Block</div>
+    <p>Text following the overflowing image...</p>
+  </article>
+</body>
+</html>
