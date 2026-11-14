@@ -1,6 +1,7 @@
 {
   "name": "viewport-iq",
   "version": "1.0.0",
+  "mcpName": "io.github.opitien/viewport-iq",
   "description": "ViewportIQ: Production-grade Browser Inspection & Responsive Testing MCP Server. Inspect websites, test responsive layouts, detect overflow, capture screenshots, and audit layouts — all through AI assistants via MCP.",
   "main": "dist/index.js",
   "type": "module",
