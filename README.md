@@ -1,12 +1,19 @@
-# ViewportIQ: Browser Inspection & Responsive Testing MCP Server
+<div align="center">
+  <img src="assets/banner.png" alt="ViewportIQ Banner" width="100%" />
+</div>
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue.svg)](https://www.typescriptlang.org/)
-[![MCP](https://img.shields.io/badge/Model_Context_Protocol-1.6-purple.svg)](https://modelcontextprotocol.io/)
-[![Playwright](https://img.shields.io/badge/Playwright-Chromium-green.svg)](https://playwright.dev/)
-[![Tests](https://img.shields.io/badge/tests-24%20passed-brightgreen.svg)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <a href="https://github.com/Opitien/Viewport-iq"><img src="https://img.shields.io/badge/TypeScript-5.7-blue.svg" alt="TypeScript"></a>
+  <a href="https://modelcontextprotocol.io/"><img src="https://img.shields.io/badge/Model_Context_Protocol-1.6-purple.svg" alt="MCP"></a>
+  <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Playwright-Chromium-green.svg" alt="Playwright"></a>
+  <img src="https://img.shields.io/badge/tests-24%20passed-brightgreen.svg" alt="Tests">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+</p>
 
-**ViewportIQ** is a production-quality Model Context Protocol (MCP) server engineered for frontend developers and AI assistants (Claude Desktop, Cursor, Cline, Windsurf). It equips AI assistants with deep browser inspection, multi-viewport responsive layout testing, evidence-based overflow detection, and automated visual comparison.
+<p align="center">
+  <strong>Production-grade Browser Inspection &amp; Responsive Layout Testing MCP Server for AI Assistants</strong><br>
+  Equips Claude Desktop, Cursor, Cline, and other MCP clients with deep DOM inspection, multi-viewport layout validation, overflow detection, and visual pixel-diff analysis via Playwright Chromium.
+</p>
 
 ---
 

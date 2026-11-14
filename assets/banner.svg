@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="40%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#93C5FD" />
+    </linearGradient>
+
+    <linearGradient id="iqGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <radialGradient id="glowRight" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowLeft" cx="15%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="badgeShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="360" fill="url(#bannerBg)" />
+  <rect width="1280" height="360" fill="url(#glowRight)" />
+  <rect width="1280" height="360" fill="url(#glowLeft)" />
+
+  <!-- Subtle Blueprint Grid Pattern -->
+  <g opacity="0.08" stroke="#38BDF8" stroke-width="1">
+    <line x1="0" y1="40" x2="1280" y2="40" />
+    <line x1="0" y1="120" x2="1280" y2="120" />
+    <line x1="0" y1="200" x2="1280" y2="200" />
+    <line x1="0" y1="280" x2="1280" y2="280" />
+    <line x1="160" y1="0" x2="160" y2="360" />
+    <line x1="320" y1="0" x2="320" y2="360" />
+    <line x1="480" y1="0" x2="480" y2="360" />
+    <line x1="640" y1="0" x2="640" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="960" y1="0" x2="960" y2="360" />
+    <line x1="1120" y1="0" x2="1120" y2="360" />
+  </g>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1278" height="358" rx="16" fill="none" stroke="#1E293B" stroke-width="2" />
+
+  <!-- LEFT: Icon Symbol Embedded -->
+  <g transform="translate(68, 60)">
+    <!-- Ambient Icon Aura -->
+    <circle cx="120" cy="120" r="100" fill="#6366F1" opacity="0.2" filter="blur(20px)" />
+    
+    <!-- Outer Screen (Desktop) -->
+    <rect x="20" y="25" width="200" height="130" rx="10" fill="#1E293B" fill-opacity="0.9" stroke="url(#iqGrad)" stroke-width="3" />
+    <path d="M 20 48 L 220 48" stroke="#334155" stroke-width="1.5" />
+    <circle cx="36" cy="36" r="3.5" fill="#EF4444" />
+    <circle cx="48" cy="36" r="3.5" fill="#F59E0B" />
+    <circle cx="60" cy="36" r="3.5" fill="#10B981" />
+
+    <!-- Overlapping Mobile Screen -->
+    <rect x="95" y="65" width="75" height="135" rx="12" fill="#0B0F19" stroke="url(#iqGrad)" stroke-width="2.5" />
+    <rect x="120" y="72" width="25" height="3" rx="1.5" fill="#475569" />
+    <line x1="108" y1="90" x2="157" y2="90" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" />
+    <line x1="108" y1="102" x2="145" y2="102" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+    <line x1="108" y1="112" x2="150" y2="112" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Caliper Crosshairs -->
+    <path d="M 5 70 L -4 70 L -4 140 L 5 140" fill="none" stroke="#06B6D4" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M 235 70 L 244 70 L 244 140 L 235 140" fill="none" stroke="#06B6D4" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Radar / IQ Node -->
+    <circle cx="178" cy="155" r="24" fill="#0F172A" stroke="url(#iqGrad)" stroke-width="2.5" />
+    <circle cx="178" cy="155" r="9" fill="url(#iqGrad)" />
+    <circle cx="175" cy="152" r="2.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- CENTER-RIGHT: Typography & Branding -->
+  <g transform="translate(370, 75)">
+    <!-- Small Category Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="28" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <circle cx="14" cy="14" r="5" fill="#10B981" />
+      <text x="28" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#94A3B8" letter-spacing="1">MODEL CONTEXT PROTOCOL</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 68)">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="52" font-weight="800" fill="url(#textGrad)" letter-spacing="-1">
+        Viewport<tspan fill="url(#iqGrad)">IQ</tspan>
+      </text>
+    </g>
+
+    <!-- Tagline -->
+    <g transform="translate(0, 108)">
+      <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#94A3B8" letter-spacing="-0.2">
+        Browser Inspection &amp; Responsive Layout Testing for AI Assistants
+      </text>
+    </g>
+
+    <!-- Feature Badges Row -->
+    <g transform="translate(0, 146)">
+      <!-- Badge 1: 17 Tools -->
+      <g filter="url(#badgeShadow)">
+        <rect width="135" height="34" rx="8" fill="#1E293B" stroke="#4338CA" stroke-width="1.5" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600" fill="#A5B4FC">⚡ 17 MCP Tools</text>
+      </g>
+
+      <!-- Badge 2: Multi-Viewport -->
+      <g transform="translate(145, 0)" filter="url(#badgeShadow)">
+        <rect width="170" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="500" fill="#E2E8F0">📱 7 Viewport Presets</text>
+      </g>
+
+      <!-- Badge 3: Overflow Detection -->
+      <g transform="translate(325, 0)" filter="url(#badgeShadow)">
+        <rect width="175" height="34" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="500" fill="#E2E8F0">🔍 Overflow Detection</text>
+      </g>
+
+      <!-- Badge 4: Pixel Diff -->
+      <g transform="translate(510, 0)" filter="url(#badgeShadow)">
+        <rect width="170" height="34" rx="8" fill="#1E293B" stroke="#0E7490" stroke-width="1.5" />
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5" font-weight="600" fill="#38BDF8">🎯 Pixel-Diff Match</text>
+      </g>
+    </g>
+  </g>
+</svg>

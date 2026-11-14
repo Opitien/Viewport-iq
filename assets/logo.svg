@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+
+    <!-- Primary Accent Gradient (Indigo to Cyan) -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Screen Glass Gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Lens Flare / Glow -->
+    <radialGradient id="lensGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.6" />
+      <stop offset="40%" stop-color="#6366F1" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6366F1" flood-opacity="0.35" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="508" height="508" x="2" y="2" rx="110" fill="none" stroke="#334155" stroke-width="2" stroke-opacity="0.5" />
+
+  <!-- Ambient Glow Behind Viewport Frames -->
+  <circle cx="256" cy="256" r="180" fill="url(#lensGlow)" filter="url(#subtleGlow)" />
+
+  <!-- Outer Desktop Viewport Wireframe -->
+  <rect x="76" y="116" width="360" height="230" rx="16" fill="url(#glassGrad)" stroke="url(#accentGrad)" stroke-width="4" filter="url(#dropShadow)" />
+  
+  <!-- Desktop Top Bar -->
+  <path d="M 76 148 L 436 148" stroke="#334155" stroke-width="2" />
+  <circle cx="102" cy="132" r="5" fill="#EF4444" />
+  <circle cx="120" cy="132" r="5" fill="#F59E0B" />
+  <circle cx="138" cy="132" r="5" fill="#10B981" />
+
+  <!-- Tablet Viewport Frame (Offset layered) -->
+  <rect x="136" y="156" width="240" height="190" rx="12" fill="#1E293B" fill-opacity="0.7" stroke="#60A5FA" stroke-width="2.5" stroke-dasharray="6 4" />
+
+  <!-- Mobile Viewport Frame (Center Prominent) -->
+  <rect x="196" y="180" width="120" height="216" rx="18" fill="#0F172A" stroke="url(#accentGrad)" stroke-width="4" filter="url(#dropShadow)" />
+  <!-- Mobile Speaker & Camera Notch -->
+  <rect x="236" y="190" width="40" height="4" rx="2" fill="#475569" />
+  <circle cx="230" cy="192" r="2.5" fill="#38BDF8" />
+
+  <!-- Mobile Screen Content / Responsive Caliper Lines -->
+  <line x1="216" y1="214" x2="296" y2="214" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+  <line x1="216" y1="230" x2="276" y2="230" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.7" />
+  <line x1="216" y1="244" x2="286" y2="244" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round" stroke-opacity="0.7" />
+
+  <!-- Responsive Measurement Crosshairs / Inspection Calipers -->
+  <!-- Left Bracket -->
+  <path d="M 52 200 L 36 200 L 36 312 L 52 312" fill="none" stroke="#06B6D4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Right Bracket -->
+  <path d="M 460 200 L 476 200 L 476 312 L 460 312" fill="none" stroke="#06B6D4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Caliper Measurement Indicators -->
+  <circle cx="36" cy="256" r="4" fill="#06B6D4" />
+  <circle cx="476" cy="256" r="4" fill="#06B6D4" />
+
+  <!-- Glowing Inspection Iris / "IQ" Eye (Lower Right Accent) -->
+  <g transform="translate(320, 276)">
+    <!-- Radar / Scan Ring -->
+    <circle cx="50" cy="50" r="44" fill="#0F172A" stroke="url(#accentGrad)" stroke-width="3.5" filter="url(#dropShadow)" />
+    <circle cx="50" cy="50" r="32" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="4 3" />
+    <circle cx="50" cy="50" r="16" fill="url(#accentGrad)" />
+    <!-- Core Spark -->
+    <circle cx="46" cy="46" r="4" fill="#FFFFFF" />
+  </g>
+
+  <!-- Bottom Stand for Desktop -->
+  <path d="M 226 346 L 216 384 L 296 384 L 286 346 Z" fill="#334155" opacity="0.8" />
+  <rect x="196" y="384" width="120" height="8" rx="4" fill="#475569" />
+</svg>
